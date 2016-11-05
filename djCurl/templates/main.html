@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="/static/makemecool.css">
+      <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+      <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+      <script type="text/javascript">
+         $(function() {
+
+           $('#curl_button').click(function(event) {
+             event.preventDefault();
+             $.ajax({
+                 type: 'POST',
+                 url: '/curl/',
+                 data: $('#curl_input_form').serialize(),
+                 success: function (data, textStatus) {
+                     $('textarea#curl_op').val(data); // append to inner html
+                 },
+                 error: function(xhr, status, e) {
+                     alert(status, e);
+                 }
+             });
+           });
+     
+         });
+      </script>
+   </head>
+
+   <body>
+    <form id="curl_input_form" method="post">
+         {% csrf_token %}
+         <textarea class="t1" name="curl_text" placeholder="Enter your curl here..." text="hello"></textarea>
+    </form>
+    <button class="button-green pure-button" id="curl_button">Make it curl</button>
+    <textarea class="t2" id="curl_op" readonly></textarea>
+   </body>
+</html>

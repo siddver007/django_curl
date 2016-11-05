@@ -1,0 +1,1 @@
+web: gunicorn djCUrlProjekt.wsgi --log-file -
