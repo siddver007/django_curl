@@ -1,1 +1,1 @@
-web: gunicorn djCUrlProjekt.wsgi --log-file -
+web: gunicorn djCurlProjekt.wsgi --log-file -
