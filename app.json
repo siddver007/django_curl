@@ -1,0 +1,7 @@
+{
+  "name": "Django Curl",
+  "description": "Web-App that allows you to execute curl commands",
+  "repository": "https://github.com/siddver007/django_curl.git",
+  "logo": "https://avatars2.githubusercontent.com/u/17350072?v=3&s=466",
+  "keywords": ["django", "curl"]
+}
