@@ -1,29 +1,23 @@
 .t1{
-    width: 40%;
-    height: 94vh;
+    height: 100%;
+    width: 100%;
     padding: 12px 20px;
-    box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-    float: left;
-    margin: 20px
 }
 
 .t2{
-    width: 40%;
-    height: 94vh;
+    height: 100%;
+    width: 100%;
     padding: 12px 20px;
-    box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-    float: right;
-    margin: 20px
 }
 
 .button-green {
@@ -36,6 +30,14 @@
     width: 120px;   
 }
 
-body {
-    margin: 0;
+.s40p {
+    height: 40%;
+}
+
+.s20p {
+    height: 20%;
+}
+
+html, body, div.md, form.md{
+  height: 100%;
 }
